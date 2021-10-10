@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>tiendac.co - Carrito de compras</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="image/Logonofondo.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/Estilos.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    </head>
+    <body>
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-ligth justify-content-between ">
+                <!--  
+                <figure>
+                    <img id="avatar" src="imagenes/avatar.png" title="avatar">
+                    <img id="avatar" src="C:\Users\ROGER GONZALEZ\Dropbox\Mi PC (LAPTOP-418JAPR9)\Desktop\TIENDA C\Image\Logo.jpeg" title="avatar">
+                </figure>
+            -->
+                <div class="container px-4 px-lg-5">
+                <!-- Nombre del proyecto TIENDA C--> 
+                    <a class="navbar-brand" href="#!"><img src="Image/Logonofondo.png" width="60" height="60" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0 ms-lg-4">
+                            <li class="nav-item"><a class="nav-link" href="#!">Home</a></li>
+                            <!--<li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>-->
+                            <li class="nav-item"><a class="nav-link" href="#!">Nosotros</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="#!">Shop</a></li>-->
+                        
+                            
+                            <!-- Lista desplegable del Shop--> 
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#!">Sneakers</a></li>
+                                    <li><a class="dropdown-item" href="#!">Tennis</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="#!">Tacones</a></li>
+                                    <li><a class="dropdown-item" href="#!">Sandalias</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="#!">Promociones</a></li>
+                                    
+                                </ul>
+                            </li>
+                            
+                            
+                        </ul>
+
+                        
+
+                        <!-- Carrito de pagos--> 
+                        <form class="d-flex">
+                            <button class="btn" style="background-color:white " type="submit">
+                                <i class="bi-cart-fill me-1"></i>
+                                Carrito
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button>
+                        </form>
+                        <!-- Carrito de pagos--> 
+                    </div>
+                </div>
+            </nav>
+        
+    <div class="wrapper mt-sm-5 bg-white">
+    <div class="progresses py-4">
+        <ul class="d-flex align-items-center justify-content-between" >
+            <li id="step-1" class="blue"></li>
+            <li id="step-2"></li>
+            <li id="step-3"></li>
+        </ul>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7 col-md-6 border-top border-end p-sm-4 p-2">
+            <div id="products-list" class="bg-light me-sm-3">
+                <div class="row product bg-white shadow-sm m-sm-4 m-2">
+                    <div class="col px-sm-3 px-2 pt-3 d-flex justify-content-center"> <img src="Image/Deportivo.PNG" alt="" class="product-img"> </div>
+                    <div class="col px-sm-3 px-2 pt-3">
+                        <div class="d-flex flex-column justify-content-between"> <a href="#" class="text-decoration-none">Sneakers</a>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column w-50">
+                                    <div class="font-weight-bold">Precio:</div>
+                                    <div class="font-weight-bold">Cantidad:</div>
+                                </div>
+                                <div class="d-flex flex-column w-50">
+                                    <div class="text-muted">$120.000</div>
+                                    <div class="d-flex align-items-center">
+                                        <!--Aumentar cantidad-->
+                                        <div class="btn btn-primary"><span class="fas fa-plus"></span></div>
+                                        <div class="bg-light number">1</div>
+                                        <!--Disminuirr cantidad-->
+                                        <div class="btn btn-primary" ><span class="fas fa-minus"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn btn-dark delete border-0"> <span class="fas fa-trash-alt"></span> </div>
+                    </div>
+                </div>
+                <div class="row product bg-white shadow-sm m-sm-4 m-2">
+                    <div class="col px-sm-3 px-2 pt-3 d-flex justify-content-center"> <img src="Image/promo.PNG" alt="" class="product-img"> </div>
+                    <div class="col px-sm-3 px-2 pt-3">
+                        <div class="d-flex flex-column justify-content-between"> <a href="#" class="text-decoration-none">Sandalia plana Hada</a>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column w-50">
+                                    <div class="font-weight-bold">Precio:</div>
+                                    
+                                    <div class="font-weight-bold">Cantidad:</div>
+                                </div>
+                                <div class="d-flex flex-column w-60">
+                                    <div class="text-muted">$30.000</div>
+                                        
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn btn-primary"><span class="fas fa-plus"></span></div>
+                                        <div class="bg-light number">2</div>
+                                        <div class="btn btn-primary"><span class="fas fa-minus"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn btn-dark delete border-0"> <span class="fas fa-trash-alt"></span> </div>
+                    </div>
+                </div>
+                <div class="row product bg-white shadow-sm m-sm-4 m-2">
+                    <div class="col px-sm-3 px-2 pt-3 d-flex justify-content-center"> <img src="Image/Depor2.PNG" alt="" class="product-img"> </div>
+                    <div class="col px-sm-3 px-2 pt-3">
+                        <div class="d-flex flex-column justify-content-between"> <a href="#" class="text-decoration-none">Tennis en cuero</a>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column w-50">
+                                    <div class="font-weight-bold">Precio:</div>
+                                    <div class="font-weight-bold">Cantidad:</div>
+                                </div>
+                                <div class="d-flex flex-column w-50">
+                                    <div class="text-muted">$90.000</div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn btn-primary"><span class="fas fa-plus"></span></div>
+                                        <div class="bg-light number">1</div>
+                                        <div class="btn btn-primary"><span class="fas fa-minus"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn btn-dark delete border-0"> <span class="fas fa-trash-alt"></span> </div>
+                    </div>
+                </div>
+                <div class="row product bg-white shadow-sm m-sm-4 m-2">
+                    <div class="col px-sm-3 px-2 pt-3 d-flex justify-content-center"> <img src="Image/tacon.PNG" alt="" class="product-img"> </div>
+                    <div class="col px-sm-3 px-2 pt-3">
+                        <div class="d-flex flex-column justify-content-between"> <a href="#" class="text-decoration-none">Tacones Plataforma</a>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column w-50">
+                                    <div class="font-weight-bold">Precio:</div>
+                                    <div class="font-weight-bold">Cantidad:</div>
+                                </div>
+                                <div class="d-flex flex-column w-50">
+                                    <div class="text-muted">75.000</div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn btn-primary"><span class="fas fa-plus"></span></div>
+                                        <div class="bg-light number">1</div>
+                                        <div class="btn btn-primary"><span class="fas fa-minus"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn btn-dark delete border-0"> <span class="fas fa-trash-alt"></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 border-top border-start p-sm-4 p-2">
+            <div id="billing">
+                <div class="form-group d-flex flex-fill"> <input type="text" placeholder="Código de promoción" class="flex-grow-1 bg-light"> <input type="submit" value="Aplicar" class="btn btn-dark"> </div>
+                <div class="d-flex align-items-center flex-fill my-1 mt-4" id="discount">
+                    <div class="bg-dark text-white w-50 border-0">Descuento</div>
+                    <div class="amount text-center w-50 border">0 $</div>
+                </div>
+                <div class="d-flex align-items-center flex-fill my-1" id="total">
+                    <div class="bg-dark text-white w-50 border-0">Total</div>
+                    <div class="amount text-center w-50 border">$345.000</div>
+                </div>
+                <div class="d-flex justify-content-between text-center mt-4" id="btns">
+                    <div class="btn btn-primary me-2">Continuar</div>
+                    <div class="btn btn-default ms-2">Regresar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+   <!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white"> <img src="Image\logocircular.png" width="60" height="50"> Copyright © 2021</p>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</html>
